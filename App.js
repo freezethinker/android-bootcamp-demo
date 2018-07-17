@@ -1,6 +1,5 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { AppRegistry, TextInput, Button } from 'react-native';
+import React, { Component } from 'react';
+import { Alert, AppRegistry, Platform, StyleSheet, Text,TextInput, Button, TouchableHighlight, TouchableOpacity, TouchableNativeFeedback, TouchableWithoutFeedback, View } from 'react-native';
 
 export default class App extends React.Component {
 
@@ -9,7 +8,8 @@ constructor(props) {
     this.state = { text: 'Search Something' };
   }
 
-  onPressLearnMore() {
+_onPressButton() {
+    Alert.alert('You tapped the button!')
   }
 
   render() {
@@ -28,7 +28,15 @@ constructor(props) {
           color="#841584"
           accessibilityLabel="Learn more about this purple button"
         />
+
+
+      <TouchableHighlight onPress={this._onPressButton} underlayColor="white">
+                        <View style={styles.button}>
+                          <Text style={styles.buttonText}>TouchableHighlight</Text>
+                        </View>
+      </TouchableHighlight>
       </View>
+
     );
   }
 }
