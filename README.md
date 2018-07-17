@@ -1,4 +1,4 @@
-# Bootcamp Demo React Native App
+# Myntra: Bootcamp Demo React Native App
 
 A very small ecommerce application focussing on fundamentals of React Native. The app consists of a landing page with search textInput, a product list page & a product display page (PDP). 
 
